@@ -60,7 +60,7 @@ h1 {
   height: 1px;
   background: linear-gradient(270deg, hsla(159, 36%, 57%,1)0%, hsla(159, 65%, 88%, 0.34)100%);
 }
-/* ========== LAYOUT =========== */
+/* ========== LAYOUT ========== */
 
 #header {
   display: flex;
