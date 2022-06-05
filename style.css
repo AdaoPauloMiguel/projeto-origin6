@@ -1,0 +1,157 @@
+/* =========RESET============ */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+
+}
+a {
+  text-decoration: none;
+}
+
+img {
+width: 100%;
+height: auto;
+}
+/* ========= VARIABLES ============ */
+:root{
+--header-heigth:4.5rem;
+/* ====COLORES==== */
+--base-color:#69B99D;
+--base-color-second:#CCF4E6;
+--base-color-alt:hsl(0, 57%, 53%);
+--title-color:#0F241D;
+--text-color:hsl(0, 0%, 45%);
+--text-color-ligth:#F9F9F9;
+--body-color:#ffffff;
+}
+/* ========== BASE =========== */
+body {
+  font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--body-color);
+  -webkit-font-smoothing:antialiased ;
+}
+
+h1 {
+  font-family: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing:auto;
+}
+
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color-ligth);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: .25rem;
+  transition: background .3s;
+}
+
+.button:hover {
+  background:var(--base-color-alt);
+}
+
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(270deg, hsla(159, 36%, 57%,1)0%, hsla(159, 65%, 88%, 0.34)100%);
+}
+/* ========== LAYOUT =========== */
+
+#header {
+  display: flex;
+  border-bottom: 2px solid #e4e4e4;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--body-color);
+}
+
+nav {
+  height: 4.5rem;
+  display: flex;
+  justify-content:space-between ;
+  align-items:center;
+  margin-top: var(--header-heigth);
+  width: 100%;
+}
+
+.logo {
+  font: 700 1.31rem 'poppins', sans-serif;
+  color: var(--title-color);
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+main{
+  margin-top: var(--header-heigth);
+
+}
+
+.conteiner {
+  margin: 0 1.5rem;
+  
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+#home {
+  overflow: hidden;
+}
+
+#home .conteiner {
+margin: 0;
+}
+#home .image {
+  position: relative;
+}
+
+#home .image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: var(--base-color);
+  position: absolute;
+  top: -16.8%;
+  left: 16.7%;
+  z-index: 0;
+  border-radius: 0.25rem;
+ 
+}
+
+#home .image img {
+  position: relative;
+  right: 2.93rem;
+  border-radius: 0.25rem;
+}
+
+#home .text {
+  margin: 0 1.5rem;
+  text-align: center;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+/* =========HOME============ */
